@@ -8,13 +8,12 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md py-4 px-12">
+    <nav className="bg-white shadow-md py-4 px-4 md:px-12">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <div className="rounded-full bg-red-400 w-8 h-8 flex items-center justify-center">
-            {/* Add your logo here */}
+            
           </div>
-          <span className="ml-3 text-xl font-bold">I'm Web</span>
         </div>
         <div className="hidden md:flex space-x-4">
           <a href="#home" className="text-gray-700 hover:text-gray-900">
@@ -53,7 +52,7 @@ const Nav = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="md:hidden">
+        <div className="md:hidden flex flex-col items-center">
           <a href="#home" className="block text-gray-700 py-2 px-4">
             Home
           </a>

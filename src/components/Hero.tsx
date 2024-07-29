@@ -3,7 +3,7 @@ import Profile from '../assets/Profile.jpg'
 
 const Hero= () => {
   return (
-    <section className="bg-white py-12 px-12">
+    <section className="bg-white py-12 py-4 px-4 md:px-12">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         <div className="w-full md:w-2/3">
           <h1 className="text-5xl font-bold">I'm Elisha Kiplangat</h1>

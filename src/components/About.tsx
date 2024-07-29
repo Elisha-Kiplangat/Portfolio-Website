@@ -2,7 +2,7 @@
 
 const About = () => {
   return (
-    <section className="bg-gray-100 py-12 px-12">
+    <section className="bg-gray-100 py-12 px-4 md:px-12">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold">About Me</h2>
         <p className="mt-4 text-gray-600">
