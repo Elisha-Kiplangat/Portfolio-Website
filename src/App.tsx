@@ -1,7 +1,9 @@
 
 import About from './components/About'
+import Education from './components/Education'
 import Hero from './components/Hero'
 import Nav from './components/Nav'
+import Skills from './components/Skills'
 
 function App() {
 
@@ -10,6 +12,8 @@ function App() {
       <Nav />
       <Hero />
       <About />
+      <Education />
+      <Skills />
     </>
   )
 }

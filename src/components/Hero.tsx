@@ -12,7 +12,7 @@ const details = [
 
 const Hero = () => {
   return (
-    <section className="bg-white py-12 px-4 md:px-12">
+    <section className="bg-purple-100 py-12 px-4 md:px-20 font-serif">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         {details.map((detail, index) => (
             <div className='w-full flex flex-col md:flex-row items-center'>
