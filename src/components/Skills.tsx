@@ -1,15 +1,25 @@
+import Azure from '../assets/Azure.jpg'; 
+import Hono from '../assets/Hono.jpg';
+import JS from '../assets/JS.jpg';
+import Node from '../assets/Node.jpg';
+import php from '../assets/php.jpg';
+import Postgres from '../assets/Postgres.jpg';
+import React from '../assets/React.jpg';
+import Tailwind from '../assets/Tailwind.jpg';
+import Ts from '../assets/Ts.jpg';
+import Drizzle from '../assets/Drizzle.jpeg'
 
 const skills = [
-  { name: 'TypeScript', logo: 'https://pin.it/Mt8iVYlej' },
-  { name: 'JavaScript', logo: 'https://pin.it/Mt8iVYlej' },
-  { name: 'PHP', logo: 'https://pin.it/3YGZxzjWy' },
-  { name: 'Node', logo: 'https://pin.it/3YGZxzjWy' },
-  { name: 'Hono', logo: 'https://example.com/path/to/hono-logo.png' },
-  { name: 'Drizzle ORM', logo: 'https://example.com/path/to/drizzle-orm-logo.png' },
-  { name: 'React', logo: 'https://pin.it/2DkmBhm1R' },
-  { name: 'Tailwind CSS', logo: 'https://example.com/path/to/tailwind-logo.png' },
-  { name: 'Postgres', logo: 'https://pin.it/3YGZxzjWy' },
-  { name: 'Azure', logo: 'https://example.com/path/to/azure-logo.png' },
+  { name: 'TypeScript', logo: Ts },
+  { name: 'JavaScript', logo: JS },
+  { name: 'PHP', logo: php },
+  { name: 'Node', logo: Node },
+  { name: 'Hono', logo: Hono },
+  { name: 'Drizzle ORM', logo: Drizzle },
+  { name: 'React', logo: React },
+  { name: 'Tailwind CSS', logo: Tailwind },
+  { name: 'Postgres', logo: Postgres },
+  { name: 'Azure', logo: Azure },
 ];
 
 const Skills = () => {
@@ -20,7 +30,7 @@ const Skills = () => {
         <div className="border-b-2 border-purple-500 w-32 mx-auto mb-8"></div>
         <div className="flex flex-wrap justify-center items-center">
           {skills.map((skill, index) => (
-            <div key={index} className="bg-gray-100 shadow-lg rounded-lg p-4 m-4 w-32 md:w-48 text-center">
+            <div key={index} className="bg-gray-100 shadow-lg rounded-lg p-4 m-4 w-32 md:w-48 text-center transform transition-transform duration-300 hover:scale-105">
               <img 
                 src={skill.logo}
                 alt={`${skill.name} logo`}
