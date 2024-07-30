@@ -18,7 +18,7 @@ const aboutDetails = [
 const About = () => {
   return (
     <section className="bg-white py-12 px-4 md:px-20 font-serif">
-      <div className="container mx-auto">
+      <div className="container">
         {aboutDetails.map((detail, index) => (
           <div key={index}>
             <div className="text-center">
@@ -34,17 +34,17 @@ const About = () => {
               ))}
               <button className="bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600 mb-8">Contact Me</button>
             </div>
-            <div className="flex flex-col md:flex-row items-center">
-              <div className="w-full md:w-1/2 md:pl-8">
+            <div className="flex flex-col md:flex-row items-center gap-10">
+              <div className="w-full md:w-1/2 md:pl-0">
                 {detail.paragraphs.slice(1).map((para, idx) => (
                   <p key={idx} className="text-gray-600 mb-4">{para}</p>
                 ))}
               </div>
-              <div className="w-full md:w-1/2 h-96 mb-8 md:mb-0">
+              <div className="w-full md:w-1/2 h-96 mb-8 md:mb-0 border-8 rounded-lg border-blue-400">
                 <img 
                   src={detail.image}
                   alt="Profile" 
-                  className="w-4/5 h-96 float-right rounded-lg shadow-lg border-4 border-purple-500"
+                  className="w-full h-96 float-right rounded-b-lg shadow-lg"
                 />
               </div>
             </div>

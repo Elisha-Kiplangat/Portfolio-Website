@@ -1,4 +1,5 @@
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import BackgroundImage from '../assets/BG-dark.jpg';
 
 const WorkingProcess = () => {
@@ -11,8 +12,8 @@ const WorkingProcess = () => {
       <div className="relative z-10 text-white p-6 md:p-12">
         <div className="flex flex-col items-center">
           <div className="mb-6">
-            <button className="bg-white text-black p-4 rounded-full text-3xl focus:outline-none">
-              <span className="play-icon">▶️</span> 
+            <button className="btn btn-outline border-4 border-blue-300 text-blue-300 rounded-full hover:bg-blue-500 hover:text-blue-300 flex items-center justify-center transition duration-300 ease-in-out">
+                <FontAwesomeIcon icon={faPlay} className="font-bold text-2xl" />
             </button>
           </div>
           <h2 className="text-4xl font-bold mb-4">Working Process</h2>

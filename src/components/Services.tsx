@@ -39,7 +39,7 @@ const Services = () => {
               <h3 className="text-xl font-bold mb-2">{service.title}</h3>
               <p className="text-gray-600 mb-4">{service.description}</p>
               <div className="flex justify-center">
-                <button className="btn btn-outline btn-purple-500 text-purple-500 py-2 px-4 rounded-full hover:bg-purple-700 flex items-center">
+                <button className="btn btn-outline border-2 btn-purple-500 text-purple-500 py-2 px-4 rounded-full hover:bg-purple-700 flex items-center">
                   <FontAwesomeIcon icon={faArrowRight} className="font-bold" />
                 </button>
               </div>
