@@ -1,5 +1,6 @@
 
 import About from './components/About'
+import Contact from './components/Contact'
 import Education from './components/Education'
 import Experience from './components/Experience'
 import Hero from './components/Hero'
@@ -20,6 +21,7 @@ function App() {
       <WorkingProcess />
       <Experience />
       <Services />
+      <Contact />
     </>
   )
 }
