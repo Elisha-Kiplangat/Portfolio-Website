@@ -5,17 +5,22 @@ import { faCode, faCloud, faPalette, faArrowRight } from '@fortawesome/free-soli
 const services = [
   {
     icon: faCode,
-    title: 'Web Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+    title: 'Vehicle Rental Management Application',
+    description: 'This is an online platform which allows users to rent/book a vehicle for their travels efficiently. It entails Payment service with stripe for customers to pay. The user can book a vehicle, on the other hand, the admin manages the all services',
   },
   {
     icon: faCloud,
-    title: 'Cloud Computing',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
+    title: 'Restaurant API',
+    description: '',
   },
   {
     icon: faPalette,
-    title: 'UI/UX Design',
+    title: 'Book Repository',
+    description: 'A fullstack application for managing books database',
+  },
+  {
+    icon: faPalette,
+    title: 'Todo App',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.',
   },
 ];
@@ -24,8 +29,8 @@ const Services = () => {
   return (
     <section className="bg-purple-50 py-12 px-4 md:px-20 font-serif">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-4">What Services I'm Providing</h2>
-        <p className="text-gray-600 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h2 className="text-3xl font-bold mb-4"> Projects</h2>
+        <p className="text-gray-600 mb-8"><b>Check it out!</b> Some of the the Outstanding projects i have been working on with the Skills and Experience i have in Software Development</p>
         <div className="border-b-2 border-purple-500 w-16 mx-auto mb-8"></div>
         <div className="flex flex-wrap justify-center">
           {services.map((service, index) => (

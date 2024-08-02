@@ -8,8 +8,8 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md bg-purple-200 py-4 px-4 md:px-20 font-serif">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-white shadow-md bg-purple-200 py-4 md:px-20 font-serif">
+      <div className="container px-4 mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <div className="rounded-full bg-red-400 w-8 h-8 flex items-center justify-center">
             
@@ -30,9 +30,7 @@ const Nav = () => {
           </a>
         </div>
         <div className="hidden sm:flex space-x-4">
-          <button className="bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600">
-            Hire Me
-          </button>
+          
         </div>
         <div className="sm:hidden flex items-center">
           <button onClick={toggleMenu} className="text-gray-700 focus:outline-none">
@@ -54,7 +52,7 @@ const Nav = () => {
         </div>
       </div>
       {isOpen && (
-        <div className="sm:hidden flex flex-col items-center">
+        <div className="sm:hidden flex flex-col items-center font-bold font-serif">
           <a href="#home" className="block text-gray-700 py-2 px-4 hover:bg-purple-400 p-2 rounded">
             Home
           </a>
@@ -67,9 +65,6 @@ const Nav = () => {
           <a href="#contact" className="block text-gray-700 py-2 px-4 hover:bg-purple-400 p-2 rounded">
             Contact
           </a>
-          <button className="block bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600 mx-4 my-2">
-            Hire Me
-          </button>
         </div>
       )}
     </nav>

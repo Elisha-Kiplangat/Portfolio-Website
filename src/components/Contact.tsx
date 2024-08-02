@@ -3,7 +3,7 @@ import { faLinkedin, faTwitter, faWhatsapp, faFacebook, faGithub } from '@fortaw
 
 const Contact = () => {
   return (
-    <div className="bg-gray-100 py-10">
+    <div className="bg-gray-100 py-10 font-serif">
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h2 className="text-3xl font-bold mb-4">Stay In Touch</h2>

@@ -1,10 +1,20 @@
 import Profile from '../assets/Profile.jpg'
 
-const details = [
+interface Tdetails {
+    salutation: string;
+    name: string;
+    title: string;
+    description: string;
+    buttonText: string;
+    image: string;
+}
+
+const details: Tdetails[] = [
   {
+    salutation:"Hello 👋",
     name: "I'm Elisha Kiplangat",
     title: "A Software Engineer",
-    description: "I do web designing, development, UI/UX designing, and cloud computing services.",
+    description: "Welcome to my Portfolio. I do web designing, development, UI/UX designing, and cloud computing services.",
     buttonText: "Learn more",
     image: Profile
   }
@@ -17,10 +27,11 @@ const Hero = () => {
         {details.map((detail, index) => (
             <div className='w-full flex flex-col md:flex-row items-center'>
           <div key={index} className="w-full md:w-2/3">
-            <h1 className="text-5xl font-bold">{detail.name}</h1>
-            <h3 className="text-xl font-bold my-7">{detail.title}</h3>
+            <h1 className='text-5xl font-bold mb-4 sm:text-xl mb-0 flex justify-center'>{detail.salutation}</h1><br/>
+            <h2 className="text-3xl font-bold sm:text-3xl flex justify-center">{detail.name}</h2>
+            <h3 className="text-xl text-purple-900 w-fit font-bold my-7 p-1 outline rounded-lg sm:flex justify-center">{detail.title}</h3>
             <p className="mt-4 text-gray-600">{detail.description}</p>
-            <button className="mt-6 bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600">
+            <button className="mt-10 bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600">
               {detail.buttonText}
             </button>
           </div>
