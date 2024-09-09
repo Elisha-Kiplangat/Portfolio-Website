@@ -4,7 +4,7 @@ import { faLinkedin, faTwitter, faWhatsapp, faFacebook, faGithub } from '@fortaw
 
 const Footer = () => {
   return (
-  <footer className="footer bg-blue-100 w-fit py-10 px-4 md:px-20 font-serif text-base-content flex justify-between ">
+  <footer className="footer bg-blue-100 w-full py-10 px-4 md:px-20 sm:px-7 font-serif text-base-content flex justify-between ">
   <div className='flex items-center'>
     CopyRight
   </div>
