@@ -4,25 +4,25 @@ import { faCode, faPaintBrush, faUser, faLaptop } from '@fortawesome/free-solid-
 
 const workExperiences = [
   {
-    title: "Web Developer",
-    duration: "2022-2023",
-    description: "Developed and maintained web applications using modern frameworks and libraries. Collaborated with cross-functional teams to deliver high-quality products.",
-    progressLabel: "UI/UX Designer",
+    title: "Software Developer",
+    duration: "2024-2024",
+    description: "Developed web applications using modern frameworks and libraries. Collaborated with cross-functional teams to deliver high-quality products.",
+    progressLabel: "Software Developer",
     progress: 80,
     icon: faCode,
   },
   {
     title: "Web Designer",
     duration: "2022-2023",
-    description: "Designed user-friendly web interfaces and improved user experience through innovative design solutions.",
+    description: "Designed user-friendly web interfaces and improved user experience through innovative design solutions working with Wordpress.",
     progressLabel: "Web Designer",
     progress: 70,
     icon: faPaintBrush,
   },
   {
     title: "UI/UX Designer",
-    duration: "2023",
-    description: "Created intuitive and engaging user interfaces for various web applications and mobile apps.",
+    duration: "2024",
+    description: "Created intuitive and engaging user interfaces for various web applications and mobile apps using Figma.",
     progressLabel: "UI/UX Designer",
     progress: 90,
     icon: faUser,

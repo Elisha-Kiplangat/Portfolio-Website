@@ -1,5 +1,6 @@
 
 import About from './components/About'
+import Certification from './components/Certification'
 import Contact from './components/Contact'
 import Education from './components/Education'
 import Experience from './components/Experience'
@@ -22,6 +23,7 @@ function App() {
       <WorkingProcess />
       <Experience />
       <Services />
+      <Certification />
       <Contact />
       <Footer />
     </>

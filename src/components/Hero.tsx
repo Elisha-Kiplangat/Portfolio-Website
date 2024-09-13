@@ -22,14 +22,14 @@ const details: Tdetails[] = [
 
 const Hero = () => {
   return (
-    <section className="bg-purple-100 py-12 px-4 md:px-20 font-serif">
+    <section className="bg-purple-100 py-5 px-4 md:px-20 font-serif">
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         {details.map((detail, index) => (
             <div className='w-full flex flex-col md:flex-row items-center'>
           <div key={index} className="w-full md:w-2/3">
-            <h1 className='text-5xl font-bold mb-4 sm:text-xl mb-0 flex justify-center'>{detail.salutation}</h1><br/>
+            <h1 className='text-5xl font-bold mb-1 sm:text-3xl mb-0 flex justify-center'>{detail.salutation}</h1><br/>
             <h2 className="text-3xl font-bold sm:text-3xl flex justify-center">{detail.name}</h2>
-            <h3 className="text-xl text-purple-900 w-fit font-bold my-7 p-1 outline rounded-lg sm:flex justify-center">{detail.title}</h3>
+            <p className='flex justify-center'><h3 className="text-xl text-purple-900 w-fit font-bold my-7 p-1 outline rounded-lg">{detail.title}</h3></p>
             <p className="mt-4 text-gray-600">{detail.description}</p>
             <button className="mt-10 bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600">
               {detail.buttonText}

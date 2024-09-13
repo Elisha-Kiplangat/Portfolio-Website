@@ -16,16 +16,16 @@ const Nav = () => {
           </div>
         </div>
         <div className="hidden sm:flex space-x-4 font-bold">
-          <a href="#home" className="text-gray-700 hover:bg-purple-400 p-2 rounded">
+          <a href="/Hero" className="text-gray-700 hover:bg-purple-400 p-2 rounded">
             Home
           </a>
-          <a href="#about" className="text-gray-700 hover:bg-purple-400 p-2 rounded">
+          <a href="/About" className="text-gray-700 hover:bg-purple-400 p-2 rounded">
             About
           </a>
-          <a href="#portfolio" className="text-gray-700 hover:bg-purple-400 p-2 rounded">
+          <a href="/Skills" className="text-gray-700 hover:bg-purple-400 p-2 rounded">
             Portfolio
           </a>
-          <a href="#contact" className="text-gray-700 hover:bg-purple-400 p-2 rounded">
+          <a href="/Contact" className="text-gray-700 hover:bg-purple-400 p-2 rounded">
             Contact
           </a>
         </div>
