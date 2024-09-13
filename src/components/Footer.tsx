@@ -5,7 +5,7 @@ import { faLinkedin, faTwitter, faWhatsapp, faFacebook, faGithub } from '@fortaw
 const Footer = () => {
   return (
   <footer className="footer bg-blue-100 w-full py-10 px-4 md:px-20 sm:px-7 font-serif text-base-content flex justify-between ">
-  <div className='flex items-center'>
+   <div className='flex items-center'>
     CopyRight
   </div>
   <div className="flex items-center">
@@ -28,11 +28,10 @@ const Footer = () => {
     <a href="https://github.com/Elisha-Kiplangat" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faGithub} className="text-2xl text-gray-800 hover:text-gray-900 transition-colors" />
     </a>
-  </div>
+  </div> 
   
   
 </footer>
-
   )
 }
 
