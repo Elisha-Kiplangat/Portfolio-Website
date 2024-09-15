@@ -14,7 +14,7 @@ const details: Tdetails[] = [
     salutation:"Hello 👋",
     name: "I'm Elisha Kiplangat",
     title: "A Software Engineer",
-    description: "Welcome to my portfolio! I specialize in crafting engaging web designs, developing robust applications, designing intuitive UI/UX, and leveraging cloud technologies to deliver innovative solutions.",
+    description: "Welcome to my portfolio! I specialize in crafting engaging software designs, developing robust applications, designing intuitive UI/UX, and leveraging cloud technologies to deliver innovative solutions.",
     buttonText: "Learn more",
     image: Profile
   }
@@ -30,7 +30,7 @@ const Hero = () => {
           <div key={index} className="w-full md:w-2/3">
             <h1 className='text-3xl sm:text-4xl md:text-4xl font-bold mb-1 mb-0 flex justify-center'>{detail.salutation}</h1><br/>
             <h2 className="text-3xl sm:text-4xl md:text-3xl font-bold flex justify-center">{detail.name}</h2>
-            <p className='flex justify-center'><h3 className="sm:text-2xl md:text-2xl lg:text-3xl text-purple-900 w-fit font-bold my-7 p-1 outline rounded-lg">{detail.title}</h3></p>
+            <p className='flex justify-center'><h3 className="sm:text-2xl md:text-2xl lg:text-2xl text-purple-900 w-fit font-bold my-7 p-1 outline rounded-lg">{detail.title}</h3></p>
             <p className="mt-4 mr-3 text-gray-700">{detail.description}</p>
             <button className="mt-10 bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600">
                 

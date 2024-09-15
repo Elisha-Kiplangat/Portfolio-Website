@@ -1,16 +1,21 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faTwitter, faWhatsapp, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
-
+import logo from '../assets/Logo.png'
 
 const Footer = () => {
   return (
   <footer className="footer bg-blue-100 w-full py-10 px-4 md:px-20 sm:px-7 font-serif text-base-content flex justify-between ">
-   <div className='flex items-center'>
-    CopyRight
-  </div>
+   <div className="flex items-center text-gray-600">
+  <p className="text-sm">
+    &copy; {new Date().getFullYear()} Elisha. All rights reserved.
+  </p>
+</div>
   <div className="flex items-center">
-    <div className="rounded-full bg-red-400 w-8 h-8 flex items-center justify-center">
-    </div>
+    <img 
+      src={logo}
+      alt="logo" 
+      className="w-5 h-5 rounded-lg"
+    />
   </div>
   <div className="hidden md:flex items-center gap-5 mr-0">
     <a href="https://www.linkedin.com/in/elisha-kiplangat-111904260/" target="_blank" rel="noopener noreferrer">
