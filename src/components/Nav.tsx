@@ -8,7 +8,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-blue-200 shadow-md py-4 md:px-20 font-serif">
+    <nav className="fixed top-0 left-0 w-full bg-blue-200 shadow-md py-4 md:px-20 font-serif z-50">
       <div className="container px-4 mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <div className="rounded-full bg-red-400 w-8 h-8 flex items-center justify-center">
@@ -16,16 +16,16 @@ const Nav = () => {
           </div>
         </div>
         <div className="hidden sm:flex space-x-4 font-bold">
-          <a href="/Hero" className="text-gray-700 hover:bg-purple-400 p-2 rounded">
+          <a href="#Home" className="text-gray-700 hover:bg-purple-400 p-2 rounded">
             Home
           </a>
-          <a href="/About" className="text-gray-700 hover:bg-purple-400 p-2 rounded">
+          <a href="#About" className="text-gray-700 hover:bg-purple-400 p-2 rounded">
             About
           </a>
-          <a href="/Skills" className="text-gray-700 hover:bg-purple-400 p-2 rounded">
+          <a href="#Portfolio" className="text-gray-700 hover:bg-purple-400 p-2 rounded">
             Portfolio
           </a>
-          <a href="/Contact" className="text-gray-700 hover:bg-purple-400 p-2 rounded">
+          <a href="#Contact" className="text-gray-700 hover:bg-purple-400 p-2 rounded">
             Contact
           </a>
         </div>
@@ -53,16 +53,16 @@ const Nav = () => {
       </div>
       {isOpen && (
         <div className="sm:hidden flex flex-col items-center font-bold font-serif">
-          <a href="#home" className="block text-gray-700 py-2 px-4 hover:bg-purple-400 p-2 rounded">
+          <a href="#Home" className="block text-gray-700 py-2 px-4 hover:bg-purple-400 p-2 rounded">
             Home
           </a>
-          <a href="#about" className="block text-gray-700 py-2 px-4 hover:bg-purple-400 p-2 rounded">
+          <a href="#About" className="block text-gray-700 py-2 px-4 hover:bg-purple-400 p-2 rounded">
             About
           </a>
-          <a href="#portfolio" className="block text-gray-700 py-2 px-4 hover:bg-purple-400 p-2 rounded">
+          <a href="#Portfolio" className="block text-gray-700 py-2 px-4 hover:bg-purple-400 p-2 rounded">
             Portfolio
           </a>
-          <a href="#contact" className="block text-gray-700 py-2 px-4 hover:bg-purple-400 p-2 rounded">
+          <a href="#Contact" className="block text-gray-700 py-2 px-4 hover:bg-purple-400 p-2 rounded">
             Contact
           </a>
         </div>
