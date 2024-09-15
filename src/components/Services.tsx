@@ -1,6 +1,7 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode, faCloud, faPalette, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faCloud, faPalette } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const services = [
   {
@@ -43,9 +44,14 @@ const Services = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">{service.title}</h3>
               <p className="text-gray-600 mb-4">{service.description}</p>
-              <div className="flex justify-center">
-                <button className="btn btn-outline border-2 btn-purple-500 text-purple-500 py-2 px-4 rounded-full hover:bg-purple-700 flex items-center">
-                  <FontAwesomeIcon icon={faArrowRight} className="font-bold" />
+              <div className="border-b-2 border-purple-500 mx-auto mb-4"></div>
+              <div className="flex justify-around">
+                <button className="btn btn-outline border-2 btn-purple-500 text-purple-500 py-2 px-3 rounded-full hover:bg-purple-700 flex items-center">
+                  <FontAwesomeIcon icon={faGithub} className="text-2xl text-purple-800 hover:text-gray-900 transition-colors" />
+                  {/* <FontAwesomeIcon icon={faArrowRight} className="font-bold" /> */}
+                </button>
+                <button className='btn btn-outline border-2 btn-purple-500 text-purple-500 py-2 px-2 rounded-full hover:bg-purple-700 flex items-center'>
+                  <p className="text-purple-800 hover:text-gray-900 transition-colors">Link</p>
                 </button>
               </div>
             </div>
