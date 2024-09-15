@@ -39,11 +39,11 @@ const workExperiences = [
 
 const Experience = () => {
   return (
-    <section className="bg-white py-12 px-4 md:px-20 font-serif">
+    <section id='Portfolio' className="bg-white py-12 px-4 md:px-20 font-serif">
       <div className="container mx-auto">
         <div className="text-center">
           <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
-          <p className="text-gray-600 mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p className="text-gray-600 mb-8">A showcase of the roles and projects that have shaped my career in software development.</p>
           <div className="border-b-2 border-purple-500 w-16 mx-auto mb-8"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
