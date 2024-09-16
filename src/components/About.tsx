@@ -1,5 +1,5 @@
 
-import SetupImage from '../assets/Setup.jpg';
+import SetupImage from '../assets/bg2.jpg';
 
 const aboutDetails = [
   {

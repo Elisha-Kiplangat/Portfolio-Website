@@ -7,21 +7,29 @@ const services = [
     icon: faCode,
     title: 'Vehicle Rental Management Application',
     description: 'A comprehensive fullstack solution for managing vehicle rentals, including vehicle listing, rental booking, customer management, and payment processing.',
+    github: 'https://github.com/Elisha-Kiplangat/Vehicle-Rental-Management-System-Frontend',
+    liveLink: 'https://jolly-wave-009c1500f.5.azurestaticapps.net/'
   },
   {
     icon: faCloud,
     title: 'Restaurant API',
     description: 'A backend API designed to manage restaurant operations, including handling menus, orders, reservations, inventory, staff, and customer data. The API supports CRUD operations for all entities and provides functionality for real-time order updates and reporting.',
+    github: 'https://github.com/Elisha-Kiplangat/restaurant_API_with_neon',
+    liveLink: ''
   },
   {
     icon: faPalette,
     title: 'Book Repository',
     description: 'A fullstack web application for managing a collection of books. Users can add, update, delete, and search for books, with features like user authentication and role-based access.',
+    github: 'https://github.com/Elisha-Kiplangat/Book-repository-frontend',
+    liveLink: 'https://book-repository-frontend.vercel.app/'
   },
   {
     icon: faPalette,
     title: 'Todo App',
     description: 'A simple yet functional task management application that allows users to create, update, delete, and organize tasks. It supports features like task categorization, prioritization, and due date reminders, with a user-friendly interface to track progress.',
+    github: 'https://github.com/Elisha-Kiplangat/Todo-app-react',
+    liveLink: 'https://todo-app-react-azure-phi.vercel.app/'
   },
 ];
 
@@ -48,15 +56,16 @@ const Services = () => {
                 <p className="text-gray-600 mb-4">{service.description}</p>
               </div>
               <div className=''>
-                <div className="border-b-2 border-purple-500 w-48 mx-auto mb-4"></div>
+                <div className="border-b-2 border-purple-500 w-48 mx-auto mb-4"></div>                 
                   <div className="flex justify-around mt-auto">
-                  <button className="btn btn-outline border-2 border-purple-500 text-purple-500 py-2 px-3 rounded-full flex items-center group-hover:bg-purple-500 group-hover:text-white transition-colors">
+                  <a href={service.github} target="_blank" rel="noopener noreferrer" className="btn btn-outline border-2 border-purple-500 text-purple-500 py-2 px-3 rounded-full flex items-center group-hover:bg-purple-500 group-hover:text-white transition-colors">
                     <FontAwesomeIcon icon={faGithub} className="text-2xl group-hover:text-white transition-colors" />
-                  </button>
-                  <button className='btn btn-outline border-2 border-purple-500 text-purple-500 py-2 px-2 rounded-full flex items-center group-hover:bg-purple-500 group-hover:text-white transition-colors'>
-                    <p className="group-hover:text-white transition-colors">Link</p>
-                  </button>
+                  </a>
+                  <a href={service.liveLink} target="_blank" rel="noopener noreferrer" className='btn btn-outline border-2 border-purple-500 text-purple-500 py-2 px-2 rounded-full flex items-center group-hover:bg-purple-500 group-hover:text-white transition-colors'>
+                    <p className="group-hover:text-white transition-colors">Live</p>
+                  </a>
                 </div>
+                
               </div>
 
             </div>
