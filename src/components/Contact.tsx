@@ -1,7 +1,53 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faTwitter, faWhatsapp, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { useState } from 'react';
+import emailjs from 'emailjs-com';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e: any) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+
+
+    emailjs.send(
+      import.meta.env.VITE_SERVICE_ID,
+      import.meta.env.VITE_TEMPLATE_ID,
+      {
+        from_name: formData.name,
+        from_email: formData.email,
+        message: formData.message,
+      },
+      import.meta.env.VITE_ID
+    )
+    .then(() => {
+      toast.success('Email sent successfully!', {
+        position: "top-right"
+      });
+      setFormData({ name: '', email: '', message: '' });
+    })
+    .catch(() => {
+      toast.error('Failed to send email. Please try again.', {
+        position: "top-right"
+      });
+    });
+  };
+
   return (
     <div id='Contact' className="bg-gray-100 py-10 font-serif">
       <div className="container mx-auto px-4">
@@ -13,50 +59,63 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-6 text-gray-800">Contact Form</h2>
-            <form className="space-y-4">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                  placeholder="Your Name"
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                  placeholder="Your Email"
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                  Message
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={4}
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-                  placeholder="Your Message"
-                />
-              </div>
-              <button
-                type="submit"
-                className="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
-              >
-                Submit
-              </button>
-            </form>
+            <form className="space-y-4" onSubmit={handleSubmit}>
+  <div>
+    <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+      Name
+    </label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+      placeholder="Your Name"
+      value={formData.name}
+      onChange={handleChange}
+      required
+    />
+  </div>
+  
+  <div>
+    <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+      Email Address
+    </label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+      placeholder="Your Email"
+      value={formData.email}
+      onChange={handleChange}
+      required
+    />
+  </div>
+  
+  <div>
+    <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+      Message
+    </label>
+    <textarea
+      id="message"
+      name="message"
+      rows={4}
+      className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+      placeholder="Your Message"
+      value={formData.message}
+      onChange={handleChange}
+      required
+    />
+  </div>
+  
+  <button
+    type="submit"
+    className="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
+  >
+    Submit
+  </button>
+</form>
+
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-6 text-gray-800">Contact Details</h2>
@@ -97,6 +156,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
