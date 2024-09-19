@@ -53,12 +53,12 @@ const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center">
           <h2 className="text-3xl font-bold mb-4">Stay In Touch</h2>
-          <p className="text-gray-600 mb-8">Reach out to me at any time with the contact info below</p>
+          <p className="text-gray-600 mb-8">Reach out at any time with the contact info below</p>
           <div className="border-b-2 border-purple-500 w-16 mx-auto mb-8"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold mb-6 text-gray-800">Contact Form</h2>
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">Reach out</h2>
             <form className="space-y-4" onSubmit={handleSubmit}>
   <div>
     <label htmlFor="name" className="block text-sm font-medium text-gray-700">
@@ -118,18 +118,18 @@ const Contact = () => {
 
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-2xl font-bold mb-6 text-gray-800">Contact Details</h2>
+            <h2 className="text-2xl font-bold mb-6 text-gray-800">Connect</h2>
             <div className="space-y-4">
               <div>
-                <p className="text-lg font-medium text-gray-700">Address:</p>
-                <p className="text-gray-600">Kutus, Kirinyaga, Kenya</p>
+                <p className="text-lg font-medium text-gray-800">Address:</p>
+                <p className="text-purple-800">Kutus, Kirinyaga, Kenya</p>
               </div>
               <div>
-                <p className="text-lg font-medium text-gray-700">Phone:</p>
-                <p className="text-gray-600">+254700123762</p>
+                <p className="text-lg font-medium text-gray-800">Phone:</p>
+                <p className="text-purple-800">+254 700123762</p>
               </div>
               <div>
-                <p className="text-lg font-medium text-gray-700">Email:</p>
+                <p className="text-lg font-medium text-gray-800">Email:</p>
                 <p className="text-gray-600">
                   <a href="mailto:elishakiplanga@gmail.com" className="text-blue-500">elishakiplanga@gmail.com</a>
                 </p>
