@@ -1,8 +1,9 @@
-
+import teach2give from '../assets/teach2GiveLogo.jpeg'
 const certifications = [
   {
     title: "Software Development",
     organization: "Teach2Give",
+    logo: teach2give,
     date: "July 2024",
   }
 ];
@@ -24,9 +25,16 @@ const Certification = () => {
           <h3 className="text-2xl font-semibold mb-3 text-gray-800 group-hover:text-purple-600 transition-colors">
             {cert.title}
           </h3>
-          <p className="text-md text-gray-500 mb-2">{cert.organization}</p>
-          <p className="text-sm text-gray-400 mb-4">{cert.date}</p>
+          <div className='flex flex-row gap-8 justify-center'>
+            <div className='h-10 w-10'>
+              <img src= {teach2give} alt="teach2give logo" />
+            </div>
+            <div>
+              <p className="text-md text-gray-800">{cert.organization}</p>
+              <p className="text-sm text-gray-400 mb-4">{cert.date}</p>
           
+            </div>
+          </div>
           <div className="flex justify-center">
             <button className="btn border-2 border-purple-500 text-purple-500 py-2 px-4 rounded-full hover:bg-purple-600 hover:text-white transition-all duration-300 ease-in-out">
               Verify
