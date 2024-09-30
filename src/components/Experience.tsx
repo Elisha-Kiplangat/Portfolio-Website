@@ -5,7 +5,7 @@ import { faCode, faPaintBrush, faUser, faLaptop } from '@fortawesome/free-solid-
 const workExperiences = [
   {
     title: "Software Developer",
-    duration: "2024-2024",
+    duration: "2024",
     description: "Developed web applications using modern frameworks and libraries. Collaborated with cross-functional teams to deliver high-quality products.",
     progressLabel: "Software Developer",
     progress: 80,
