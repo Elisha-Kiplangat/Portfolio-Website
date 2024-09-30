@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const Contact = () => {
+  const [isSending, setIsSending] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -23,7 +24,7 @@ const Contact = () => {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-
+    setIsSending(true);
 
     emailjs.send(
       import.meta.env.VITE_SERVICE_ID,
@@ -40,11 +41,13 @@ const Contact = () => {
         position: "top-right"
       });
       setFormData({ name: '', email: '', message: '' });
+      setIsSending(false);
     })
     .catch(() => {
       toast.error('Failed to send email. Please try again.', {
         position: "top-right"
       });
+      setIsSending(false);
     });
   };
 
@@ -109,11 +112,13 @@ const Contact = () => {
   </div>
   
   <button
-    type="submit"
-    className="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
-  >
-    Submit
+        type="submit"
+        className="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
+        disabled={isSending}
+      >
+        {isSending ? 'Sending...' : 'Send'}
   </button>
+  
 </form>
 
           </div>
