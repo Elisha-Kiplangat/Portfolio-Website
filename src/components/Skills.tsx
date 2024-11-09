@@ -8,6 +8,7 @@ import React from '../assets/React.jpg';
 import Tailwind from '../assets/Tailwind.jpg';
 import Ts from '../assets/Ts.jpg';
 import Drizzle from '../assets/Drizzle.jpeg'
+import CSharp from '../assets/CSharp.jpeg'
 
 const skills = [
   { name: 'TypeScript', logo: Ts },
@@ -20,6 +21,7 @@ const skills = [
   { name: 'Tailwind CSS', logo: Tailwind },
   { name: 'Postgres', logo: Postgres },
   { name: 'Azure', logo: Azure },
+  { name: 'C#', logo: CSharp}
 ];
 
 const Skills = () => {

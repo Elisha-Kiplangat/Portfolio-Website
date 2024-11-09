@@ -1,5 +1,5 @@
 
-import SetupImage from '../assets/bg2.jpg';
+import SetupImage from '../assets/Setup.jpg';
 
 const aboutDetails = [
   {
@@ -41,7 +41,7 @@ const About = () => {
                   <p key={id} className="text-gray-600 mb-4">{para}</p>
                 ))}
               </div>
-              <div className="w-full md:w-1/2 h-96 mb-8 md:mb-0 border-8 rounded-lg border-blue-400">
+              <div className="w-3/5 md:w-1/2 h-96 mb-8 md:mb-0 border-8 rounded-lg border-blue-400">
                 <img 
                   src={detail.image}
                   alt="Profile" 

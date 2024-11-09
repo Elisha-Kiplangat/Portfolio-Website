@@ -129,10 +129,10 @@ const Contact = () => {
                 <p className="text-lg font-medium text-gray-800">Address:</p>
                 <p className="text-purple-800">Kutus, Kirinyaga, Kenya</p>
               </div>
-              <div>
+              {/* <div>
                 <p className="text-lg font-medium text-gray-800">Phone:</p>
                 <p className="text-purple-800">+254 700123762</p>
-              </div>
+              </div> */}
               <div>
                 <p className="text-lg font-medium text-gray-800">Email:</p>
                 <p className="text-gray-600">
