@@ -41,12 +41,13 @@ const About = () => {
                   <p key={id} className="text-gray-600 mb-4">{para}</p>
                 ))}
               </div>
-              <div className="w-3/5 md:w-1/2 h-96 mb-8 md:mb-0 border-8 rounded-lg border-blue-400">
+              <div className="w-3/5 md:w-1/2 aspect-w-4 aspect-h-3 mb-8 md:mb-0 border-8 rounded-lg border-blue-400 overflow-hidden">
                 <img 
                   src={detail.image}
                   alt="Profile" 
-                  className="w-full h-96 float-right rounded-b-lg shadow-lg"
-                />
+                  className="w-full h-full object-cover shadow-lg"
+              />
+
               </div>
             </div>
           </div>
