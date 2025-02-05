@@ -9,7 +9,7 @@ import Hero from './components/Hero'
 import Nav from './components/Nav'
 import Services from './components/Services'
 import Skills from './components/Skills'
-import WorkingProcess from './components/WorkingProcess'
+// import WorkingProcess from './components/WorkingProcess'
 
 function App() {
 
@@ -20,7 +20,7 @@ function App() {
       <About />
       <Education />
       <Skills />
-      <WorkingProcess />
+      {/* <WorkingProcess /> */}
       <Experience />
       <Services />
       <Certification />
