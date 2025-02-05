@@ -7,9 +7,9 @@ const aboutDetails = [
     description: "I pursued Bachelor of Science in Software Engineering from Kirinyaga University.",
     subTitle: "Developing With a Passion While Exploring The New Technologies.",
     paragraphs: [
-      "I am a dedicated software engineer with a strong foundation in software engineering principles and a passion for developing innovative software solutions.",
-      "Throughout my career, I have consistently demonstrated the ability to solve complex problems, work effectively in team settings, and deliver high-quality software products. I am committed to continuous learning and staying up-to-date with the latest industry trends and technologies.",
-      "With a keen eye for detail and a focus on user experience, I strive to create applications that are not only functional but also intuitive and visually appealing."
+      "I am a passionate software engineer with a strong foundation in software engineering principles and a passion for developing innovative software solutions.",
+      "My journey in technology and software development has allowed me to gain expertise in React, Node.js, PostgreSQL, TypeScript, and Azure Cloud.",
+      "With a keen eye for detail and a focus on user experience, I strive to create applications that are not only functional but also intuitive. I actively engage with the tech community, sharing knowledge, collaborating on projects and fostering innovation through teamwork."
     ],
     image: SetupImage
   }
@@ -41,14 +41,14 @@ const About = () => {
                   <p key={id} className="text-gray-600 mb-4">{para}</p>
                 ))}
               </div>
-              <div className="w-3/5 md:w-1/2 aspect-w-4 aspect-h-3 mb-8 md:mb-0 border-8 rounded-lg border-blue-400 overflow-hidden">
+              <div className="flex w-full sm:w-3/4 md:w-1/3 lg:w-1/4 aspect-w-4 aspect-h-3 mb-8 md:mb-0 border-8 rounded-lg border-blue-400 overflow-hidden mx-auto">
                 <img 
                   src={detail.image}
                   alt="Profile" 
                   className="w-full h-full object-cover shadow-lg"
-              />
-
+                />
               </div>
+
             </div>
           </div>
         ))}
