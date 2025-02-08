@@ -20,7 +20,7 @@ const certifications = [
 
 const Certification = () => {
   return (
-    <section className="bg-gray-200 py-16 px-4 md:px-20 font-serif">
+    <section className="bg-purple-100 py-16 px-4 md:px-20 font-serif">
   <div className="container mx-auto text-center">
     <h2 className="text-4xl font-bold mb-6 text-gray-800">Certifications</h2>
     <p className="text-lg text-gray-600 mb-8">Below are some of the certifications I've earned, showcasing my skills and expertise.</p>

@@ -17,8 +17,8 @@ const aboutDetails = [
 
 const About = () => {
   return (
-    <section id='About' className="bg-white py-12 px-4 md:px-20 font-serif">
-      <div className="container">
+    <section id='About' className="bg-purple-100 py-12 px-4 md:px-20 font-serif">
+      <div className="container mx-auto">
         {aboutDetails.map((detail, index) => (
           <div key={index}>
             <div className="text-center">

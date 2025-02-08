@@ -16,7 +16,7 @@ const educationDetails = [
 
 const Education = () => {
   return (
-    <section className="bg-gray-100 py-12 px-4 md:px-12 font-serif">
+    <section className="bg-purple-100 py-12 px-4 md:px-12 font-serif">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-center">Education</h2>
           <div className="border-b-2 border-purple-500 w-32 mx-auto mb-8"></div>

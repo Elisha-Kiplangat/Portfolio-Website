@@ -43,7 +43,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="bg-purple-50 py-12 px-4 md:px-20 font-serif">
+    <section className="bg-purple-100 py-12 px-4 md:px-20 font-serif">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4">Projects</h2>
         <p className="text-gray-600 mb-8">
