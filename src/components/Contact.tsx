@@ -55,12 +55,12 @@ const Contact = () => {
     <div id='Contact' className="bg-purple-100 py-10 font-serif">
       <div className="container mx-auto px-4">
         <div className="text-center">
-          <h2 className="text-3xl font-bold mb-4">Stay In Touch</h2>
+          <h2 className="text-black text-3xl font-bold mb-4">Stay In Touch</h2>
           <p className="text-gray-600 mb-8">Reach out at any time with the contact info below</p>
           <div className="border-b-2 border-purple-500 w-16 mx-auto mb-8"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-blue-100 p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-6 text-gray-800">Reach out</h2>
             <form className="space-y-4" onSubmit={handleSubmit}>
   <div>
@@ -71,7 +71,7 @@ const Contact = () => {
       type="text"
       id="name"
       name="name"
-      className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+      className="mt-1 block w-full px-3 py-2 border bg-blue-50 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
       placeholder="Your Name"
       value={formData.name}
       onChange={handleChange}
@@ -87,7 +87,7 @@ const Contact = () => {
       type="email"
       id="email"
       name="email"
-      className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+      className="mt-1 block w-full px-3 py-2 border bg-blue-50 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
       placeholder="Your Email"
       value={formData.email}
       onChange={handleChange}
@@ -103,7 +103,7 @@ const Contact = () => {
       id="message"
       name="message"
       rows={4}
-      className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+      className="mt-1 block w-full px-3 py-2 border bg-blue-50 border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
       placeholder="Your Message"
       value={formData.message}
       onChange={handleChange}
@@ -122,7 +122,7 @@ const Contact = () => {
 </form>
 
           </div>
-          <div className="bg-white p-6 rounded-lg shadow-md">
+          <div className="bg-blue-100 p-6 rounded-lg shadow-md">
             <h2 className="text-2xl font-bold mb-6 text-gray-800">Connect</h2>
             <div className="space-y-4">
               <div>

@@ -45,7 +45,7 @@ const Services = () => {
   return (
     <section className="bg-purple-100 py-12 px-4 md:px-20 font-serif">
       <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-4">Projects</h2>
+        <h2 className="text-black text-3xl font-bold mb-4">Projects</h2>
         <p className="text-gray-600 mb-8">
           <b>Check it out!</b> Some of the outstanding projects I have been working on with the skills and experience I have in Software Development
         </p>

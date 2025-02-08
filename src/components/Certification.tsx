@@ -30,7 +30,7 @@ const Certification = () => {
       {certifications.map((cert, index) => (
         <div 
           key={index} 
-          className="bg-blue-200 shadow-md hover:shadow-xl transform transition-transform duration-300 rounded-lg p-6 group"
+          className="bg-blue-100 shadow-md hover:shadow-xl transform transition-transform duration-300 rounded-lg p-6 group"
         >
           <h3 className="text-2xl font-semibold mb-3 text-gray-800 group-hover:text-purple-600 transition-colors">
             {cert.title}

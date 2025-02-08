@@ -28,11 +28,11 @@ const Skills = () => {
   return (
     <section className="bg-purple-100 py-12 px-4 md:px-12">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center">Skills</h2>
+        <h2 className="text-black text-3xl font-bold mb-8 text-center">Skills</h2>
         <div className="border-b-2 border-purple-500 w-32 mx-auto mb-8"></div>
         <div className="flex flex-wrap justify-center items-center">
           {skills.map((skill, index) => (
-            <div key={index} className="bg-gray-100 shadow-lg rounded-lg p-4 m-4 w-32 md:w-48 text-center transform transition-transform duration-300 hover:scale-105">
+            <div key={index} className="bg-white shadow-lg rounded-lg p-4 m-4 w-32 md:w-48 text-center transform transition-transform duration-300 hover:scale-105">
               <img 
                 src={skill.logo}
                 alt={`${skill.name} logo`}

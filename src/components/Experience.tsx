@@ -42,15 +42,15 @@ const Experience = () => {
     <section id='Portfolio' className="bg-purple-100 py-12 px-4 md:px-20 font-serif">
       <div className="container mx-auto">
         <div className="text-center">
-          <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
+          <h2 className="text-black text-3xl font-bold mb-4">Work Experience</h2>
           <p className="text-gray-600 mb-8">A Showcase of My Expertise and Experience in Key Technology Areas.</p>
           <div className="border-b-2 border-purple-500 w-16 mx-auto mb-8"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {workExperiences.map((experience, index) => (
-            <div key={index} className="p-6 bg-white rounded-lg shadow-lg hover:scale-105 transition-transform">
+            <div key={index} className="p-6 bg-blue-100 rounded-lg shadow-lg hover:scale-105 transition-transform">
               <FontAwesomeIcon icon={experience.icon} className="text-purple-600 text-2xl mb-4" />
-              <h3 className="text-xl font-bold mb-2">{experience.title}</h3>
+              <h3 className="text-gray-800 text-xl font-bold mb-2">{experience.title}</h3>
               <p className="text-purple-600 mb-4">{experience.duration}</p>
               <p className="text-gray-600 mb-4">{experience.description}</p>
               <div className="flex items-center justify-between mb-2">

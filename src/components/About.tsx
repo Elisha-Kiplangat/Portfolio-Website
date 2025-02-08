@@ -22,12 +22,12 @@ const About = () => {
         {aboutDetails.map((detail, index) => (
           <div key={index}>
             <div className="text-center">
-              <h2 className="text-3xl font-bold mb-4">{detail.sectionTitle}</h2>
+              <h2 className="text-black text-3xl font-bold mb-4">{detail.sectionTitle}</h2>
               <p className="text-gray-600 mb-8">{detail.description}</p>
               <div className="border-b-2 border-purple-500 w-16 mx-auto mb-8"></div>
             </div>
             <div>
-              <h3 className="text-2xl text-center font-bold mb-4">{detail.subTitle}</h3>
+              <h3 className="text-black text-2xl text-center font-bold mb-4">{detail.subTitle}</h3>
               <div className="border-b-2 border-purple-500 w-48 lg:ml-48 md:ml-5 sm:ml-0 mb-8"></div>
               
               {/* <button className="bg-purple-500 text-white py-2 px-4 rounded hover:bg-purple-600 mb-8">Contact Me</button> */}
