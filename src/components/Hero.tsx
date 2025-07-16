@@ -25,13 +25,11 @@ const Hero = () => {
   return (
     <section id='Home' className="relative flex items-center justify-center mt-10 py-2 px-4 md:px-20 font-serif overflow-hidden bg-gradient-to-br from-purple-50 via-indigo-50 to-purple-100 min-h-screen">
       
-      {/* Background decorative elements */}
       <div className="absolute top-10 left-10 w-20 h-20 bg-purple-300 rounded-full opacity-20 animate-pulse"></div>
       <div className="absolute bottom-20 right-20 w-32 h-32 bg-indigo-300 rounded-full opacity-20 animate-pulse delay-1000"></div>
       <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-yellow-300 rounded-full opacity-15 animate-bounce"></div>
       
-      {/* Animated stars background */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-20 pointer-events-none">
         <div className="absolute inset-0 flex flex-wrap justify-center items-center">
           {Array.from({ length: 50 }).map((_, i) => (
             <motion.div
@@ -100,9 +98,8 @@ const Hero = () => {
                   </div>
                   
                   <motion.button
-                    className="bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-medium py-2 px-5 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center space-x-2 text-sm cursor-pointer relative z-30"
+                    className="bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-medium py-2 px-5 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center space-x-2 text-sm cursor-pointer relative z-30 pointer-events-auto"
                     onClick={() => {
-                      
                       const link = document.createElement('a');
                       link.href = '/Resume.pdf';
                       link.download = 'Elisha_Kiplangat_Resume.pdf';
