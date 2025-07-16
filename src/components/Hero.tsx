@@ -31,12 +31,12 @@ const Hero = () => {
       <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-yellow-300 rounded-full opacity-15 animate-bounce"></div>
       
       {/* Animated stars background */}
-      <div className="absolute inset-0 z-20">
+      <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 flex flex-wrap justify-center items-center">
           {Array.from({ length: 50 }).map((_, i) => (
             <motion.div
               key={i}
-              className="text-yellow-400"
+              className="text-yellow-400 pointer-events-none"
               style={{
                 fontSize: `${Math.random() * 1 + 0.5}rem`,
                 position: 'absolute',
@@ -88,7 +88,7 @@ const Hero = () => {
                 </div>
                 
                 <motion.div 
-                  className="mt-8 flex justify-center md:justify-start"
+                  className="mt-8 flex justify-center md:justify-start items-center space-x-6"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 1.2, duration: 0.6 }}
@@ -98,6 +98,35 @@ const Hero = () => {
                     <div className="w-3 h-3 bg-indigo-500 rounded-full animate-bounce delay-100"></div>
                     <div className="w-3 h-3 bg-purple-500 rounded-full animate-bounce delay-200"></div>
                   </div>
+                  
+                  <motion.button
+                    className="bg-gradient-to-r from-purple-500 to-indigo-500 hover:from-purple-600 hover:to-indigo-600 text-white font-medium py-2 px-5 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center space-x-2 text-sm cursor-pointer relative z-30"
+                    onClick={() => {
+                      
+                      const link = document.createElement('a');
+                      link.href = '/Resume.pdf';
+                      link.download = 'Elisha_Kiplangat_Resume.pdf';
+                      link.click();
+                    }}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 1.4, duration: 0.6 }}
+                  >
+                    <svg 
+                      className="w-4 h-4" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round" 
+                        strokeWidth="2" 
+                        d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                      />
+                    </svg>
+                    <span>Resume</span>
+                  </motion.button>
                 </motion.div>
               </div>
             </motion.div>
