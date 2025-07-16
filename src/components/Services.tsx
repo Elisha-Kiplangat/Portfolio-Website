@@ -1,10 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar, faHouse, faBook, faListCheck } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import House from '../assets/BG-dark.jpg'
-import VehicleRental from '../assets/VehicleRental.jpg'
-import BookRepo from '../assets/BookRepo.jpg'
-import todo from '../assets/todo.jpg'
+// import VehicleRental from '../assets/VehicleRental.jpg'
+// import BookRepo from '../assets/BookRepo.jpg'
 
 const services = [
   {
@@ -13,7 +11,7 @@ const services = [
     description: 'A comprehensive fullstack solution for managing housing applications, including property listing, application submission, tenant management, and M-pesa payment processing.',
     github: 'https://github.com/Elisha-Kiplangat/E-Housing',
     liveLink: 'https://e-housing.vercel.app',
-    image: House
+    image: "/Ehousing.jpeg"
   },
   
   {
@@ -22,7 +20,7 @@ const services = [
     description: 'A comprehensive fullstack solution for managing vehicle rentals, including vehicle listing, rental booking, customer management, and payment processing.',
     github: 'https://github.com/Elisha-Kiplangat/Vehicle-Rental-Management-System-Frontend',
     liveLink: 'https://jolly-wave-009c1500f.5.azurestaticapps.net/',
-    image: VehicleRental
+    image: "./VehicleRental.jpg"
   },
   
   {
@@ -31,7 +29,7 @@ const services = [
     description: 'A fullstack web application for managing a collection of books. Users can add, update, delete, and search for books, with features like user authentication and role-based access.',
     github: 'https://github.com/Elisha-Kiplangat/Book-repository-frontend',
     liveLink: 'https://book-repository-frontend.vercel.app/',
-    image: BookRepo
+    image: "/BookRepo.jpg"
   },
   {
     icon: faListCheck,
@@ -39,7 +37,7 @@ const services = [
     description: 'A comprehensive task management application that helps users organize and prioritize their tasks effectively.',
     github: 'https://github.com/Elisha-Kiplangat/Task-Management',
     liveLink: 'https://task-management-inky-two.vercel.app',
-    image: todo
+    image: "/TaskMngt.jpeg"
   },
 ];
 
