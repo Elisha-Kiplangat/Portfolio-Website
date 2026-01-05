@@ -36,7 +36,7 @@ const services = [
     title: 'Task Management',
     description: 'A comprehensive task management application that helps users organize and prioritize their tasks effectively.',
     github: 'https://github.com/Elisha-Kiplangat/Task-Management',
-    liveLink: 'https://task-management-inky-two.vercel.app',
+    liveLink: 'https://task-intelli.vercel.app/',
     image: "/TaskMngt.jpeg"
   },
 ];
