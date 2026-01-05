@@ -19,7 +19,7 @@ const services = [
     title: 'Vehicle Rental Management',
     description: 'A comprehensive fullstack solution for managing vehicle rentals, including vehicle listing, rental booking, customer management, and payment processing.',
     github: 'https://github.com/Elisha-Kiplangat/Vehicle-Rental-Management-System-Frontend',
-    liveLink: 'https://jolly-wave-009c1500f.5.azurestaticapps.net/',
+    liveLink: 'https://vehicle-car.vercel.app/',
     image: "./VehicleRental.jpg"
   },
   
