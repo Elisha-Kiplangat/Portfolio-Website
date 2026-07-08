@@ -111,14 +111,14 @@ const Nav = () => {
               {item}
             </motion.a>
           ))}
-          <motion.button
+          {/* <motion.button
             className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-8 py-3 rounded-full font-medium hover:from-purple-600 hover:to-indigo-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl mt-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : 20 }}
             transition={{ delay: 0.4, duration: 0.3 }}
           >
             Hire Me
-          </motion.button>
+          </motion.button> */}
         </div>
       </motion.div>
     </nav>

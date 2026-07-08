@@ -19,7 +19,7 @@ const services = [
     title: 'Vehicle Rental Management',
     description: 'A comprehensive fullstack solution for managing vehicle rentals, including vehicle listing, rental booking, customer management, and payment processing.',
     github: 'https://github.com/Elisha-Kiplangat/Vehicle-Rental-Management-System-Frontend',
-    liveLink: 'https://jolly-wave-009c1500f.5.azurestaticapps.net/',
+    liveLink: 'https://vehicle-car.vercel.app/',
     image: "./VehicleRental.jpg"
   },
   
@@ -36,7 +36,7 @@ const services = [
     title: 'Task Management',
     description: 'A comprehensive task management application that helps users organize and prioritize their tasks effectively.',
     github: 'https://github.com/Elisha-Kiplangat/Task-Management',
-    liveLink: 'https://task-management-inky-two.vercel.app',
+    liveLink: 'https://task-intelli.vercel.app/',
     image: "/TaskMngt.jpeg"
   },
 ];
