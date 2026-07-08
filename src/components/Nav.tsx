@@ -1,16 +1,50 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { Moon, Sun } from 'lucide-react';
 import logo from '../assets/Logo.png'
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => {
+    if (typeof window === 'undefined') {
+      return 'light';
+    }
+
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme === 'light' || storedTheme === 'dark') {
+      return storedTheme;
+    }
+
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+  }, [theme]);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const toggleTheme = () => {
+    const root = document.documentElement;
+    const nextTheme = theme === 'light' ? 'dark' : 'light';
+
+    root.classList.add('theme-switching');
+    root.setAttribute('data-theme', nextTheme);
+    localStorage.setItem('theme', nextTheme);
+    setTheme(nextTheme);
+
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => {
+        root.classList.remove('theme-switching');
+      });
+    });
+  };
+
   return (
-    <nav className="fixed top-0 left-0 w-full bg-blue-100 backdrop-blur-md shadow-2xl py-3 md:px-20 font-serif z-50 border-b border-purple-100">
+    <nav className="fixed top-0 left-0 w-full theme-surface backdrop-blur-md shadow-2xl py-3 md:px-20 font-serif z-50 border-b">
       <div className="container px-4 mx-auto flex justify-between items-center">
         <motion.div 
           className="flex items-center"
@@ -30,7 +64,7 @@ const Nav = () => {
             <h1 className="text-xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
               Elisha
             </h1>
-            <p className="text-xs text-gray-500">Software Engineer</p>
+            <p className="text-xs text-[var(--muted)]">Software Engineer</p>
           </div>
         </motion.div>
 
@@ -39,33 +73,44 @@ const Nav = () => {
             <motion.a
               key={item}
               href={`#${item}`}
-              className="relative text-gray-700 hover:text-purple-600 px-4 py-2 rounded-full transition-all duration-300 group"
+              className="relative text-[var(--muted)] hover:text-[var(--accent)] px-4 py-2 rounded-full group"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 + 0.3, duration: 0.5 }}
             >
               <span className="relative z-10">{item}</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-indigo-500 group-hover:w-full transition-all duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full opacity-0 group-hover:opacity-20"></div>
+              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-indigo-500 group-hover:w-full"></div>
             </motion.a>
           ))}
         </div>
 
         <div className="hidden sm:flex items-center space-x-4">
-          {/* <motion.button
-            className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-6 py-2 rounded-full font-medium hover:from-purple-600 hover:to-indigo-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+          <motion.button
+            type="button"
+            onClick={toggleTheme}
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full text-[var(--text)] hover:bg-[var(--accent-soft)]"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.7, duration: 0.5 }}
+            aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
           >
-            Hire Me
-          </motion.button> */}
+            {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+          </motion.button>
         </div>
 
         <div className="sm:hidden flex items-center">
+          <button
+            type="button"
+            onClick={toggleTheme}
+            className="mr-1 inline-flex h-10 w-10 items-center justify-center rounded-full text-[var(--text)] hover:bg-[var(--accent-soft)]"
+            aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
+          >
+            {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+          </button>
           <button 
             onClick={toggleMenu} 
-            className="text-gray-700 focus:outline-none p-2 rounded-lg hover:bg-purple-100 transition-colors duration-300"
+            className="text-[var(--muted)] focus:outline-none p-2 rounded-lg hover:bg-[var(--accent-soft)]"
           >
             <motion.svg
               className="w-6 h-6"
@@ -89,7 +134,7 @@ const Nav = () => {
 
       {/* Mobile Menu */}
       <motion.div 
-        className={`sm:hidden ${isOpen ? 'block' : 'hidden'} bg-white/95 backdrop-blur-md border-t border-purple-100 shadow-lg`}
+        className={`sm:hidden ${isOpen ? 'block' : 'hidden'} theme-surface backdrop-blur-md border-t shadow-lg`}
         initial={{ opacity: 0, height: 0 }}
         animate={{ 
           opacity: isOpen ? 1 : 0, 
@@ -102,7 +147,7 @@ const Nav = () => {
             <motion.a
               key={item}
               href={`#${item}`}
-              className="block text-gray-700 py-3 px-6 hover:bg-gradient-to-r hover:from-purple-100 hover:to-indigo-100 hover:text-purple-600 rounded-lg transition-all duration-300 w-full text-center"
+              className="block text-[var(--muted)] py-3 px-6 hover:bg-[var(--accent-soft)] hover:text-[var(--accent)] rounded-lg w-full text-center"
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: isOpen ? 1 : 0, x: isOpen ? 0 : -20 }}
               transition={{ delay: index * 0.1, duration: 0.3 }}
@@ -111,14 +156,6 @@ const Nav = () => {
               {item}
             </motion.a>
           ))}
-          {/* <motion.button
-            className="bg-gradient-to-r from-purple-500 to-indigo-500 text-white px-8 py-3 rounded-full font-medium hover:from-purple-600 hover:to-indigo-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl mt-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : 20 }}
-            transition={{ delay: 0.4, duration: 0.3 }}
-          >
-            Hire Me
-          </motion.button> */}
         </div>
       </motion.div>
     </nav>
