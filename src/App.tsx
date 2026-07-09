@@ -9,6 +9,7 @@ import Hero from './components/Hero'
 import Nav from './components/Nav'
 import Services from './components/Services'
 import Skills from './components/Skills'
+import Stars from './components/Stars'
 // import WorkingProcess from './components/WorkingProcess'
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
       <Certification />
       <Contact />
       <Footer />
+
+      <Stars />
     </>
   )
 }
