@@ -47,7 +47,7 @@ const Skills = () => {
   };
 
   return (
-    <section className="relative bg-purple-100 py-20 px-4 md:px-12 overflow-hidden">
+    <section className="relative bg-[var(--bg)] py-20 px-4 md:px-12 overflow-hidden">
       {/* Background decorative elements */}
       <div className="absolute top-0 left-0 w-40 h-40 bg-purple-200 rounded-full opacity-10 -translate-x-20 -translate-y-20 animate-pulse"></div>
       <div className="absolute bottom-0 right-0 w-56 h-56 bg-indigo-200 rounded-full opacity-10 translate-x-28 translate-y-28 animate-pulse delay-1000"></div>
@@ -55,13 +55,13 @@ const Skills = () => {
       <div className="container mx-auto relative z-10">
         
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent mb-4">
+          <h2 className="text-4xl font-bold bg-[var(--accent)] bg-clip-text text-transparent mb-4">
             Technical Skills
           </h2>
-          <p className="text-gray-600 text-lg mb-8">
+          <p className="text-[var(--text)] text-lg mb-8">
             Technologies and tools I work with to build amazing applications
           </p>
-          <div className="h-1 bg-gradient-to-r from-purple-500 to-indigo-500 w-24 mx-auto rounded-full"></div>
+          <div className="h-1 bg-gradient-to-r from-[var(--accent)] to-[var(--accent-2)] w-24 mx-auto rounded-full"></div>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -69,10 +69,10 @@ const Skills = () => {
             <motion.button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 ${
+              className={`px-6 py-3 rounded-full font-medium ${
                 selectedCategory === category
-                  ? 'bg-gradient-to-r from-purple-500 to-indigo-500 text-white shadow-lg scale-105'
-                  : 'bg-white/80 text-gray-700 hover:bg-white hover:shadow-md'
+                  ? 'bg-[var(--accent)] text-white shadow-lg hover:bg-[var(--accent-2)] scale-105'
+                  : 'bg-[var(--surface)] text-[var(--text)] hover:bg-[var(--accent-soft)] transition transform hover:scale-105'
               }`}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -89,7 +89,7 @@ const Skills = () => {
           {filteredSkills.map((skill, index) => (
             <motion.div
               key={skill.name}
-              className="group bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-purple-100/50 hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-2"
+              className="group bg-[var(--surface)] backdrop-blur-sm rounded-2xl p-6 shadow-xl border border-[var(--accent-soft)] hover:shadow-2xl transform hover:scale-105 hover:-translate-y-2"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
@@ -103,15 +103,15 @@ const Skills = () => {
               </div>
               
               <div className="relative mb-4">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl blur-lg opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl blur-lg opacity-20 group-hover:opacity-40"></div>
                 <img 
                   src={skill.logo}
                   alt={`${skill.name} logo`}
-                  className="relative w-16 h-16 mx-auto object-cover rounded-xl shadow-lg transform group-hover:scale-110 transition-transform duration-300"
+                  className="relative w-16 h-16 mx-auto object-cover rounded-xl shadow-lg transform group-hover:scale-110"
                 />
               </div>
               
-              <h3 className="text-lg font-bold text-gray-800 mb-3 text-center group-hover:text-purple-600 transition-colors duration-300">
+              <h3 className="text-lg font-bold text-[var(--accent-2)] mb-3 text-center group-hover:text-purple-600">
                 {skill.name}
               </h3>
             </motion.div>
@@ -119,14 +119,14 @@ const Skills = () => {
         </motion.div>
 
         <motion.div 
-          className="mt-16 bg-white/60 backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-purple-100/50"
+          className="mt-16 bg-[var(--surface)] backdrop-blur-sm rounded-3xl p-8 shadow-xl border border-[var(--accent-soft)]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8 }}
         >
           <div className="text-center mb-6">
-            <h3 className="text-2xl font-bold text-gray-800 mb-2">Skills Overview</h3>
-            <p className="text-gray-600">Technologies organized by category</p>
+            <h3 className="text-2xl font-bold text-[var(--text)] mb-2">Skills Overview</h3>
+            <p className="text-[var(--muted)]">Technologies organized by category</p>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
@@ -136,10 +136,10 @@ const Skills = () => {
               return (
                 <div key={category} className="text-center">
                   <div className={`w-16 h-16 ${getCategoryColor(category)} rounded-full flex items-center justify-center mx-auto mb-2`}>
-                    <span className="text-white font-bold text-lg">{categorySkills.length}</span>
+                    <span className="text-[var(--text)] font-bold text-lg">{categorySkills.length}</span>
                   </div>
-                  <p className="text-sm font-medium text-gray-700">{category}</p>
-                  <p className="text-xs text-gray-500">{categorySkills.length} skills</p>
+                  <p className="text-sm font-medium text-[var(--text)]">{category}</p>
+                  <p className="text-xs text-[var(--muted)]">{categorySkills.length} skills</p>
                 </div>
               );
             })}
