@@ -27,10 +27,10 @@ const About = () => {
             
             <div className="text-center mb-8">
               <div className="inline-block">
-                <h2 className="text-3xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent mb-4">
+                <h2 className="text-3xl font-bold bg-[var(--accent)] bg-clip-text text-transparent mb-4">
                   {detail.sectionTitle}
                 </h2>
-                <div className="h-1 bg-gradient-to-r from-purple-500 to-indigo-500 w-16 mx-auto mb-4 rounded-full"></div>
+                <div className="h-1 bg-gradient-to-r from-[var(--accent)] to-[var(--accent-2)] w-28 mx-auto mb-4 rounded-full"></div>
               </div>
               <p className="text-[var(--text)] max-w-2xl mx-auto leading-relaxed">
                 {detail.description}
@@ -42,7 +42,7 @@ const About = () => {
                 <h3 className="text-2xl font-bold text-[var(--text)] mb-4 leading-tight">
                   {detail.subTitle}
                 </h3>
-                <div className="h-px bg-gradient-to-r from-transparent via-purple-500 to-transparent w-48 mx-auto"></div>
+                <div className="h-px bg-gradient-to-r from-transparent via-[var(--accent)] to-transparent w-48 mx-auto"></div>
               </div>
             </div>
 

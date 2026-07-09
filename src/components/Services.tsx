@@ -83,7 +83,7 @@ const Services = () => {
                     href={service.github} 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="bg-[var(--accent)] text-white py-2 px-4 rounded-full flex items-center hover:from-purple-600 hover:to-indigo-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+                    className="bg-[var(--accent)] text-white py-2 px-4 rounded-full flex items-center hover:bg-[var(--accent-2)] transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
                     <FontAwesomeIcon icon={faGithub} className="text-sm mr-2" />
                     <span className="font-medium text-sm">GitHub</span>
@@ -92,9 +92,9 @@ const Services = () => {
                     href={service.liveLink} 
                     target="_blank" 
                     rel="noopener noreferrer" 
-                    className="bg-[var(--surface)] border-2 border-purple-500 text-purple-600 py-2 px-4 rounded-full flex items-center hover:bg-purple-500 hover:text-white transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-medium"
+                    className="bg-[var(--surface)] border-2 border-[var(--accent-2)] text-[var(--accent)] py-2 px-4 rounded-full flex items-center hover:bg-[var(--accent-2)] hover:text-white transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl font-medium"
                   >
-                    <span className="text-sm">Live Demo</span>
+                    <span className="text-sm">Visit Site</span>
                   </a>
                 </div>
               </div>

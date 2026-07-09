@@ -13,7 +13,7 @@ const WorkingProcess = () => {
         <div className="flex flex-col items-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Working Process</h2>
           <div className="mb-6">
-            <button className="btn btn-outline border-4 border-blue-300 text-blue-300 rounded-full hover:bg-blue-500 hover:text-blue-300 flex items-center justify-center transition duration-300 ease-in-out">
+            <button className="btn btn-outline border-4 border-blue-300 text-blue-300 rounded-full hover:bg-blue-500 hover:text-blue-300 flex items-center justify-center">
                 <FontAwesomeIcon icon={faPlay} className="font-bold text-2xl" />
             </button>
           </div>

@@ -42,7 +42,7 @@ const Experience = () => {
     <section id='Portfolio' className="bg-[var(--bg)] font-serif">
       <div className="container mx-auto">
         <div className="text-center">
-          <h2 className="text-[var(--text)] text-3xl font-bold mb-4">Work Experience</h2>
+          <h2 className="text-[var(--accent)] text-3xl font-bold mb-4">Work Experience</h2>
           <p className="text-[var(--muted)] mb-8">A Showcase of My Expertise and Experience in Key Technology Areas.</p>
           <div className="border-b-2 border-[var(--accent-2)] w-16 mx-auto mb-8"></div>
         </div>

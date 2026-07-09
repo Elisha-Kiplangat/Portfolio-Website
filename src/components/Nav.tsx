@@ -95,7 +95,7 @@ const Nav = () => {
             transition={{ delay: 0.7, duration: 0.5 }}
             aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
           >
-            {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
+            {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5 text-yellow-500" />}
           </motion.button>
         </div>
 
