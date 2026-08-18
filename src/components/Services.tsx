@@ -32,14 +32,14 @@ const services = [
     image: "./VehicleRental.jpg"
   },
   
-  {
-    icon: faBook,
-    title: 'Book Repository',
-    description: 'A fullstack web application for managing a collection of books. Users can add, update, delete, and search for books, with features like user authentication and role-based access.',
-    github: 'https://github.com/Elisha-Kiplangat/Book-repository-frontend',
-    liveLink: 'https://book-repository-frontend.vercel.app/',
-    image: "/BookRepo.jpg"
-  },
+  // {
+  //   icon: faBook,
+  //   title: 'Book Repository',
+  //   description: 'A fullstack web application for managing a collection of books. Users can add, update, delete, and search for books, with features like user authentication and role-based access.',
+  //   github: 'https://github.com/Elisha-Kiplangat/Book-repository-frontend',
+  //   liveLink: 'https://book-repository-frontend.vercel.app/',
+  //   image: "/BookRepo.jpg"
+  // },
   {
     icon: faListCheck,
     title: 'Task Management',
