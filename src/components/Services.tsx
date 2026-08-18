@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCar, faHouse, faBook, faListCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCar, faHouse, faBook, faListCheck, faLeaf } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 // import VehicleRental from '../assets/VehicleRental.jpg'
 // import BookRepo from '../assets/BookRepo.jpg'
@@ -12,6 +12,15 @@ const services = [
     github: 'https://github.com/Elisha-Kiplangat/E-Housing',
     liveLink: 'https://e-housing.vercel.app',
     image: "/Ehousing.jpeg"
+  },
+
+  {
+    icon: faLeaf,
+    title: 'Tomato Disease Detection',
+    description: 'A machine learning project that detects and classifies tomato plant diseases using image recognition techniques. The model is trained on a dataset of tomato leaf images to identify various diseases.',
+    github: 'https://github.com/Elisha-Kiplangat/Plant-Disease-Detection-System',
+    liveLink: 'https://tomato-disease-Detection-system.vercel.app/',
+    image: "/TomatoDisease.jpg"
   },
   
   {
