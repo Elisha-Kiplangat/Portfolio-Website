@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCar, faHouse, faListCheck, faLeaf } from '@fortawesome/free-solid-svg-icons';
+import { faCar, faHouse, faListCheck, faLeaf, faHospital } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 // import VehicleRental from '../assets/VehicleRental.jpg'
 // import BookRepo from '../assets/BookRepo.jpg'
@@ -30,6 +30,16 @@ const services = [
     github: 'https://github.com/Elisha-Kiplangat/Vehicle-Rental-Management-System-Frontend',
     liveLink: 'https://vehicle-car.vercel.app/',
     image: "./VehicleRental.jpg"
+  },
+
+  {
+    // HMS Care app
+    icon: faHospital,
+    title: 'HMS Care',
+    description: 'A fullstack web application for managing hospital operations, including patient records, appointment scheduling, and staff management.',
+    github: 'https://github.com/Elisha-Kiplangat/HMS-Care',
+    liveLink: 'https://hms-care.pages.dev/',
+    image: "/HMSCare.jpg"
   },
   
   // {
@@ -78,7 +88,7 @@ const Services = () => {
                   <img 
                     src={service.image} 
                     alt={service.title} 
-                    className="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-110" 
+                    className="w-full h-40  transition-transform duration-500 group-hover:scale-110" 
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>

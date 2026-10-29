@@ -57,7 +57,7 @@ const Nav = () => {
             <img 
               src={logo}
               alt="logo" 
-              className="relative w-12 h-12 rounded-xl shadow-lg transform group-hover:scale-110 transition-transform duration-300"
+              className="relative w-12 h-12 rounded-xl transform group-hover:scale-110 transition-transform duration-300"
             />
           </div>
           <div className="ml-3">
@@ -79,8 +79,8 @@ const Nav = () => {
               transition={{ delay: index * 0.1 + 0.3, duration: 0.5 }}
             >
               <span className="relative z-10">{item}</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full opacity-0 group-hover:opacity-20"></div>
-              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-indigo-500 group-hover:w-full"></div>
+              <div className="absolute inset-0 bg-purple-500 rounded-full opacity-0 group-hover:opacity-20"></div>
+              {/* <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-indigo-500 group-hover:w-full"></div> */}
             </motion.a>
           ))}
         </div>

@@ -30,11 +30,12 @@ const About = () => {
                 <h2 className="text-3xl font-bold bg-[var(--accent)] bg-clip-text text-transparent mb-4">
                   {detail.sectionTitle}
                 </h2>
-                <div className="h-1 bg-gradient-to-r from-[var(--accent)] to-[var(--accent-2)] w-28 mx-auto mb-4 rounded-full"></div>
+                
               </div>
               <p className="text-[var(--text)] max-w-2xl mx-auto leading-relaxed">
                 {detail.description}
               </p>
+              <div className="border-b-2 border-[var(--accent-2)] w-16 mx-auto mt-5 mb-8"></div>
             </div>
 
             <div className="text-center mb-8">

@@ -19,7 +19,7 @@ const Education = () => {
     <section className="bg-[var(--bg)] py-12 px-4 md:px-12 font-serif">
       <div className="container mx-auto">
         <h2 className="text-[var(--accent)] text-3xl font-bold mb-8 text-center">Education</h2>
-          <div className="h-1 bg-gradient-to-r from-[var(--accent)] to-[var(--accent-2)] w-28 mx-auto mb-4 rounded-full"></div>
+          <div className="border-b-2 border-[var(--accent-2)] w-16 mx-auto mt-5 mb-8"></div>
             <div className="flex flex-col md:flex-row justify-center items-center md:space-x-8">
             {educationDetails.map((edu, index) => (
             <div key={index} className="theme-surface backdrop-blur-sm shadow-lg rounded-lg p-6 mb-8 md:mb-0 w-full md:w-1/2">

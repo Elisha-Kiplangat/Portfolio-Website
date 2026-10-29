@@ -136,12 +136,12 @@ const Contact = () => {
               <div>
                 <p className="text-lg font-medium text-[var(--text)]">Email:</p>
                 <p className="text-[var(--muted)]">
-                  <a href="mailto:elishakiplanga@gmail.com" className="text-blue-500">elishakiplanga@gmail.com</a>
+                  <a href="mailto:elishakronoh@gmail.com" className="text-blue-500">elishakronoh@gmail.com</a>
                 </p>
               </div>
               <div className="border-b-2 border-[var(--accent-2)] w-full mx-auto mb-8"></div>
               <div className="flex space-x-4 mt-4">
-                <a href="https://www.linkedin.com/in/elisha-kiplangat/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/elisha-kiplangat-111904260/" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faLinkedin} className="text-2xl text-blue-700 hover:text-blue-900 transition-colors" />
                 </a>
                 <a href="https://x.com/El_i_sha" target="_blank" rel="noopener noreferrer">

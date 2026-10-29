@@ -61,7 +61,7 @@ const Skills = () => {
           <p className="text-[var(--text)] text-lg mb-8">
             Technologies and tools I work with to build amazing applications
           </p>
-          <div className="h-1 bg-gradient-to-r from-[var(--accent)] to-[var(--accent-2)] w-24 mx-auto rounded-full"></div>
+          <div className="border-b-2 border-[var(--accent-2)] w-16 mx-auto mt-5 mb-8"></div>
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 mb-12">
