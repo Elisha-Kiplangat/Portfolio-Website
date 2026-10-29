@@ -4,7 +4,7 @@ import logo from '../assets/Logo.png';
 
 const Footer = () => {
   return (
-  <footer className="footer bg-[var(--surface)] w-full py-8 px-4 md:px-20 sm:px-7 font-serif text-base-content flex justify-between ">
+  <footer className="footer bg-[var(--surface)] w-full py-4 px-4 md:px-20 sm:px-7 font-serif text-base-content flex justify-between ">
    <div className="flex items-center text-[var(--muted)]">
   <p className="text-sm text-[var(--muted)]">
     &copy; {new Date().getFullYear()} Elisha. All rights reserved.

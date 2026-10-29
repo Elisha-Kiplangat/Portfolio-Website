@@ -7,18 +7,24 @@ const educationDetails = [
     duration: "2021 - 2025"
   },
   {
-    title: "High School Studies",
+    title: "Software Development Bootcamp",
+    institution: "The Jitu",
+    description: "Intensive training in full-stack web development, covering front-end and back-end technologies.",
+    duration: "2024"
+  },
+  {
+    title: "Secondary School Education",
     institution: "Cheptenye Boys High School",
-    description: "Exploring a broad based learning, unlocking my skill potentials. ",
+    description: "Completed secondary education, laying the foundation for a career in software engineering.",
     duration: "2017 - 2020"
   }
 ];
 
 const Education = () => {
   return (
-    <section className="bg-[var(--bg)] py-12 px-4 md:px-12 font-serif">
+    <section className="bg-[var(--bg)] py-4 px-4 md:px-12 font-serif">
       <div className="container mx-auto">
-        <h2 className="text-[var(--accent)] text-3xl font-bold mb-8 text-center">Education</h2>
+        <h2 className="text-[var(--accent)] text-3xl font-bold mb-8 text-center">Education and Training</h2>
           <div className="border-b-2 border-[var(--accent-2)] w-16 mx-auto mt-5 mb-8"></div>
             <div className="flex flex-col md:flex-row justify-center items-center md:space-x-8">
             {educationDetails.map((edu, index) => (

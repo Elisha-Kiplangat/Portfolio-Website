@@ -20,11 +20,11 @@ const certifications = [
 
 const Certification = () => {
   return (
-    <section className="bg-[var(--bg)] py-16 px-4 md:px-20 font-serif">
+    <section className="bg-[var(--bg)] py-6 px-4 md:px-20 font-serif">
   <div className="container mx-auto text-center">
     <h2 className="text-4xl font-bold mb-6 text-[var(--accent)]">Certifications</h2>
-    <p className="text-lg text-[var(--muted)] mb-8">Below are some of the certifications I've earned, showcasing my skills and expertise.</p>
-    <div className="border-b-2 border-[var(--accent-2)] w-16 mx-auto mb-12"></div>
+    <p className="text-lg text-[var(--muted)] mb-4">Below are some of the certifications I've earned, showcasing my skills and expertise.</p>
+    <div className="border-b-2 border-[var(--accent-2)] w-16 mx-auto mb-4"></div>
     
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
       {certifications.map((cert, index) => (

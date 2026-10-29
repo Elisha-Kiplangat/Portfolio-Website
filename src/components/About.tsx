@@ -17,7 +17,7 @@ const aboutDetails = [
 
 const About = () => {
   return (
-    <section id='About' className="relative bg-[var(--bg)] py-10 px-4 md:px-20 font-serif overflow-hidden">
+    <section id='About' className="relative bg-[var(--bg)] py-6 px-4 md:px-20 font-serif overflow-hidden">
       {/* <div className="absolute top-0 left-0 w-32 h-32 bg-purple-200 rounded-full opacity-20 -translate-x-16 -translate-y-16"></div>
       <div className="absolute bottom-0 right-0 w-48 h-48 bg-indigo-200 rounded-full opacity-20 translate-x-24 translate-y-24"></div> */}
       

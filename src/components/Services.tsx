@@ -62,13 +62,13 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="bg-[var(--bg)] py-12 px-4 md:px-20 font-serif">
+    <section className="bg-[var(--bg)] py-6 px-4 md:px-20 font-serif">
       <div className="container mx-auto text-center">
         <h2 className="text-[var(--accent)] text-3xl font-bold mb-4">Projects</h2>
-        <p className="text-[var(--muted)] mb-8">
+        <p className="text-[var(--muted)] mb-4">
           <b>Check it out!</b> Some of the outstanding projects I have been working on with the skills and experience I have in Software Development
         </p>
-        <div className="border-b-2 border-[var(--accent-2)] w-16 mx-auto mb-8"></div>
+        <div className="border-b-2 border-[var(--accent-2)] w-16 mx-auto mb-4"></div>
         <div className="flex flex-wrap justify-center gap-8">
           {services.map((service, index) => (
             <div 
